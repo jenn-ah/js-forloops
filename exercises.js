@@ -114,7 +114,7 @@ var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ];
 for (i = 1; i<oopsArray.length; i++){
  if (i%2 === 1){
   oopsArray[i] = "nope";  
-} 
+  } 
 }
 
 console.log(oopsArray);
@@ -130,6 +130,7 @@ down
 nope
 turn
 */
+
 
 
 /* 9) Siesta Time
