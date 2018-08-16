@@ -131,13 +131,14 @@ nope
 turn
 */
 
-for (i = 1; i<oopsArray.length; i++){
- if (i%2 === 1){
-  oopsArray[i] = "nope";  
-  } 
-}
+for( var i = oopsArray.length-1; i >= 0; --i ) {
+  console.log(oopsArray[i]);
+  }
 
-console.log(oopsArray);
+// for (var i = oopsArray.length - 1; i >= 0; --i){
+
+// }
+// console.log(oopsArray);
 
 
 /* 9) Siesta Time
@@ -176,7 +177,15 @@ Write a function named `copyArray` which takes two arguments: `originArray` and 
 Inside of this function write a for-loop that will iterate through the contents of the `originArray` and pushes each element of that array into `destinationArray`. Console.log your result.
 */
 
+var valuesArray = [99, 66, 829, 1941, 8, 76];
+var copyValuesArray = "";
 
+function copyArray(originArray, destinationArray){
+  for (i = 0; i<originArray.length; i++){
+    destinationArray.push(originArray[i]);
+  }
+}
+console.log()
 
 /*Final Boss*/
 
@@ -184,7 +193,10 @@ Inside of this function write a for-loop that will iterate through the contents 
 Declare a variable named `topQuote` and assign it to a String value of your favorite one line quote.
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
+ var topQuote = "Don't count the days, make the days count";
+ function sayWhat(longestWord){
 
+ }
 
 
 /* 12) Puppet Master
